@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <title>Azamat ACME HR Demo</title>
+</head>
+
+<body>
+    <header> 
+        <h1> Azamat's Super Gun Shop</h1>
+        <img src = "../../Images/logo.png" alt = "ACME HR Deparment Logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href = "/index.html">Main Page</a></li>
+            <li><a href = "list.html">Customers</a></li>
+            <li><a href = "">Appointments</a></li>
+            <li><a href = "">Gun Sellers</a></li>
+        </ul>
+    </nav>
+
+<main>
+    <h2>Edit customer</h2>
+    <form>
+        <label for="firstName">Name: *</label>
+        <input type="text" name="firstName" id="firstName" value="Artem" required/>
+        <span id="errorFirstName">Field is required</span>
+
+        <label for="lastName">LastName: *</label>
+        <input type="text" name="lastName" id="lastName" value="Sydorovych" required/>
+        <span id="lastName"></span>
+
+        <label for="Email">Email: </label>
+        <input type="text" name="Email" id="Email" value = "president@mira.artem"/>
+        <span id="Email"></span>
+        <div>
+            <p id="errorsSumary"></p>
+            <input type="submit" value="Change" />
+            <a href ="list.html">Cancel</a>
+        </div>
+    </form>
+</main>
+
+<footer>
+    Azamat, Maraimbekov, s22850
+</footer>
+
+
+</body>
+
+
+</html>
