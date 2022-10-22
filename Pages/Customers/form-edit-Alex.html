@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <title>Azamat ACME HR Demo</title>
+</head>
+
+<body>
+    <header> 
+        <h1> Azamat's Super Gun Shop</h1>
+        <img src = "../../Images/logo.png" alt = "ACME HR Deparment Logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href = "/index.html">Main Page</a></li>
+            <li><a href = "list.html">Customers</a></li>
+            <li><a href = "">Appointments</a></li>
+            <li><a href = "">Gun Sellers</a></li>
+        </ul>
+    </nav>
+
+<main>
+    <h2>Edit customer</h2>
+    <form>
+        <label for="firstName">Name:</label>
+        <input type="text" name="firstName" id="firstName" value="Oleksandr" required/>
+        <span id="errorFirstName">Field is required</span>
+
+        <label for="lastName">LastName:</label>
+        <input type="text" name="lastName" id="lastName" value="Podolich" required/>
+        <span id="lastName"></span>
+
+        <label for="Email">Email:</label>
+        <input type="text" name="Email" id="Email" value = "adpodol@gmail.com" required/>
+        <span id="Email"></span>
+
+        <label>Preferred guns:</label>
+        <input type="checkbox" id="gun1" name="gun1" value="pistol"/>
+        <label for="gun1">Pistols</label>
+        <input type="checkbox" id="gun2" name="gun2" value="rifle"/>
+        <label for="gun2">Rifles</label>
+        <input type="checkbox" id="gun3" name="gun3" value="shotgun"/>
+        <label for="gun3">Shotguns</label>
+
+        <label>Country producer:</label>
+        <input type="radio" id="country1" name="country" value="ger"/>
+        <label for="country1">Germany</label>
+        <input type="radio" id="country2" name="country" value="il"/>
+        <label for="country1">Israel</label>
+        <input type="radio" id="country3" name="country" value="us"/>
+        <label for="country3">United States</label>
+
+        <div>
+            <p id="errorsSumary"></p>
+            <input type="submit" value="Change" />
+            <a href ="list.html">Cancel</a>
+        </div>
+    </form>
+</main>
+
+<footer>
+    Azamat, Maraimbekov, s22850
+</footer>
+
+
+</body>
+
+
+</html>

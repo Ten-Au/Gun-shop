@@ -30,11 +30,28 @@
 
         <label for="lastName">LastName: *</label>
         <input type="text" name="lastName" id="lastName" value="Sydorovych" required/>
-        <span id="lastName"></span>
+        <span id="lastName">Field is required</span>
 
-        <label for="Email">Email: </label>
-        <input type="text" name="Email" id="Email" value = "president@mira.artem"/>
+        <label for="Email">Email: *</label>
+        <input type="text" name="Email" id="Email" value = "president@mira.artem" required/>
         <span id="Email"></span>
+
+        <label>Preferred guns:</label>
+        <input type="checkbox" id="gun1" name="gun1" value="pistol"/>
+        <label for="gun1">Pistols</label>
+        <input type="checkbox" id="gun2" name="gun2" value="rifle"/>
+        <label for="gun2">Rifles</label>
+        <input type="checkbox" id="gun3" name="gun3" value="shotgun"/>
+        <label for="gun3">Shotguns</label>
+
+        <label>Country producer:</label>
+        <input type="radio" id="country1" name="country" value="ger"/>
+        <label for="country1">Germany</label>
+        <input type="radio" id="country2" name="country" value="il"/>
+        <label for="country1">Israel</label>
+        <input type="radio" id="country3" name="country" value="us"/>
+        <label for="country3">United States</label>
+
         <div>
             <p id="errorsSumary"></p>
             <input type="submit" value="Change" />
