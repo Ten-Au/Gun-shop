@@ -36,6 +36,25 @@
     </thead>
     <tbody>
         <tr>
+            <td>Artem</td>
+            <td>Sydorovych</td>
+            <td>presidentMira</td>
+            <td>+48 000 000 00</td>
+            <td>
+                <ul class="list-actions">
+                    <li>
+                        <a href = "form-details-Artem.html" class="list-actions-button-details">Details</a>
+                    </li>
+                    <li>
+                        <a href = "form-edit-Artem.html" class="list-actions-button-edit">Edit</a>
+                    </li>
+                    <li>
+                        <a href = "list-Alex-only.html" class="list-actions-button-delete">Delete</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
             <td>Oleksandr</td>
             <td>Podolich</td>
             <td>Marquizy</td>
@@ -49,7 +68,7 @@
                         <a href = "form-edit-Alex.html" class="list-actions-button-edit">Edit</a>
                     </li>
                     <li>
-                        <a href = "list-empty.html" class="list-actions-button-delete">Delete</a>
+                        <a href = "list-Artem-only.html" class="list-actions-button-delete">Delete</a>
                     </li>
                 </ul>
             </td>
@@ -57,7 +76,14 @@
 
     </tbody>
    </table>
-   <p id="infoDelete">Successfully deleted Artem!</p>
+   <div>
+   <p id="deleteInfo">Would you really like to delete a customer?</p>
+    <input type="radio" id="confirmation" name="answer" value="yes">
+    <label for="confirmation">Yes</label>
+    <input type="radio" id="cancel" name="answer" value="no">
+    <label for="cancel">No</label>
+   </div>
+   <input type="submit" value="OK">
    <p><a href = "form.html" class="button-add">Add new customer</a></p>
 </main>
 

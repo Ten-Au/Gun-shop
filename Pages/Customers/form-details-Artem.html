@@ -2,6 +2,7 @@
 <html lang = "en">
 
 <head>
+    <link rel="stylesheet" href="../../CSS/style.css">
     <meta charset = "UTF-8">
     <title>Azamat ACME HR Demo</title>
 </head>
@@ -9,41 +10,44 @@
 <body>
     <header> 
         <h1> Azamat's Super Gun Shop</h1>
-        <img src = "../../Images/logo.png" alt = "ACME HR Deparment Logo">
+        <img src = "../../Images/logo.png" alt = "Gunned Skull Logo">
     </header>
 
     <nav>
         <ul>
             <li><a href = "/index.html">Main Page</a></li>
-            <li><a href = "list.html">Customers</a></li>
-            <li><a href = "">Appointments</a></li>
-            <li><a href = "">Gun Sellers</a></li>
+            <li><a href = "list.html" class="active">Customers</a></li>
+            <li><a href = "../Appiontments/list.html">Appointments</a></li>
+            <li><a href = "../Gun Sellers/list.html">Gun Sellers</a></li>
         </ul>
     </nav>
 
 <main>
     <h2>Customer details</h2>
     
-    <form>
-        <label for="firstName">Name:</label>
-        <input type="text" name="firstName" id="firstName" value="Artem" disabled/>
-        <span id="errorFirstName">Field is required</span>
+    <form class="form">
+        <label for="firstName">Name: <span class="symbol-required">*</span></label>
+        <input type="text" name="firstName" id="firstName" value="Artem" disabled>
+        <span id="errorFirstName"></span>
 
-        <label for="lastName">LastName:</label>
-        <input type="text" name="lastName" id="lastName" value="Sydorovych" disabled/>
-        <span id="lastName"></span>
+        <label for="lastName">LastName: <span class="symbol-required">*</span></label>
+        <input type="text" name="lastName" id="lastName" value="Sydorovych" disabled>
+        <span id="errorlastName"></span>
 
-        <label for="Email">Email:</label>
-        <input type="text" name="Email" id="Email" value = "president@mira.artem" disabled/>
-        <span id="Email"></span>
-        <div>
+        <label for="nickName">NickName: </label>
+        <input type="text" name="nickName" id="nickName" value="presidentMira" disabled>
+        <span id="errornickName"></span>
+
+        <label for="phoneNumber">PhoneNumber: <span class="symbol-required">*</span></label>
+        <input type ="number" name="phoneNumber" id="phoneNumber" min="10000000" max = "99999999" value = "10000000" disabled>
+        <div class="form-buttons">
             <p id="errorsSumary"></p>
-            <a href="form-edit-Artem.html">Edit</a>
+            <a href="form-edit-Artem.html" class="list-actions-button-edit">Edit</a>
         </div>
     </form>
 
     <h3>Appointment details</h3>
-    <table>
+    <table class="table-list">
         <thead>
             <tr>
                 <th>Date</th>
@@ -64,7 +68,9 @@
             </tr>
         </tbody>
     </table>
-    <a href="list.html">Back</a>
+    <div class="form-buttons">
+    <a href="list.html" class="form-button-back">Back</a>
+    </div>
     
 </main>
 

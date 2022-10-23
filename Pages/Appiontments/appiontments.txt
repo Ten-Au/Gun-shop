@@ -1,0 +1,31 @@
+<h3>Appointment details</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Location</th>
+                <th>Customer</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            leon
+            <tr>
+                <td>2022-12-23</td>
+                <td>Warszawa Centralna</td>
+                <td>Artem</td>
+            </tr>
+            <tr>
+                <td>2023-01-13</td>
+                <td>Warszawa Wchodnia</td>
+                <td>Oleksandr</td>
+            </tr>
+
+            darius
+            <tr>
+                <td>2022-11-30</td>
+                <td>Marszalkowska 32</td>
+                <td>Oleksandr</td>
+            </tr>
+        </tbody>
+    </table>

@@ -2,6 +2,7 @@
 <html lang = "en">
 
 <head>
+    <link rel="stylesheet" href="../../CSS/style.css">
     <meta charset = "UTF-8">
     <title>Azamat ACME HR Demo</title>
 </head>
@@ -9,53 +10,40 @@
 <body>
     <header> 
         <h1> Azamat's Super Gun Shop</h1>
-        <img src = "../../Images/logo.png" alt = "ACME HR Deparment Logo">
+        <img src = "../../Images/logo.png" alt = "Gunned Skull Logo">
     </header>
 
     <nav>
         <ul>
             <li><a href = "/index.html">Main Page</a></li>
-            <li><a href = "list.html">Customers</a></li>
-            <li><a href = "">Appointments</a></li>
-            <li><a href = "">Gun Sellers</a></li>
+            <li><a href = "list.html" class="active">Customers</a></li>
+            <li><a href = "../Appiontments/list.html">Appointments</a></li>
+            <li><a href = "../Gun Sellers/list.html">Gun Sellers</a></li>
         </ul>
     </nav>
 
 <main>
     <h2>Edit customer</h2>
-    <form>
-        <label for="firstName">Name:</label>
-        <input type="text" name="firstName" id="firstName" value="Oleksandr" required/>
-        <span id="errorFirstName">Field is required</span>
+    <form class="form">
+        <label for="firstName">Name: <span class="symbol-required">*</span></label>
+        <input type="text" name="firstName" id="firstName" value="Oleksandr" required>
+        <span id="errorFirstName"></span>
 
-        <label for="lastName">LastName:</label>
-        <input type="text" name="lastName" id="lastName" value="Podolich" required/>
-        <span id="lastName"></span>
+        <label for="lastName">LastName: <span class="symbol-required">*</span></label>
+        <input type="text" name="lastName" id="lastName" value="Podolich" required>
+        <span id="errorlastName"></span>
 
-        <label for="Email">Email:</label>
-        <input type="text" name="Email" id="Email" value = "adpodol@gmail.com" required/>
-        <span id="Email"></span>
+        <label for="nickName">NickName: </label>
+        <input type="text" name="nickName" id="nickName" value="Marquizy">
+        <span id="errornickName"></span>
 
-        <label>Preferred guns:</label>
-        <input type="checkbox" id="gun1" name="gun1" value="pistol"/>
-        <label for="gun1">Pistols</label>
-        <input type="checkbox" id="gun2" name="gun2" value="rifle"/>
-        <label for="gun2">Rifles</label>
-        <input type="checkbox" id="gun3" name="gun3" value="shotgun"/>
-        <label for="gun3">Shotguns</label>
-
-        <label>Country producer:</label>
-        <input type="radio" id="country1" name="country" value="ger"/>
-        <label for="country1">Germany</label>
-        <input type="radio" id="country2" name="country" value="il"/>
-        <label for="country1">Israel</label>
-        <input type="radio" id="country3" name="country" value="us"/>
-        <label for="country3">United States</label>
+        <label for="phoneNumber">PhoneNumber: <span class="symbol-required">*</span></label>
+        <input type ="number" name="phoneNumber" id="phoneNumber" min="10000000" max = "99999999" value = "11111111" required>
 
         <div>
             <p id="errorsSumary"></p>
-            <input type="submit" value="Change" />
-            <a href ="list.html">Cancel</a>
+            <input type="submit" value="Change" class="form-button-submit">
+            <a href ="list.html" class="form-button-cancel">Cancel</a>
         </div>
     </form>
 </main>

@@ -2,6 +2,7 @@
 <html lang = "en">
 
 <head>
+    <link rel="stylesheet" href="../../CSS/style.css">
     <meta charset = "UTF-8">
     <title>Azamat ACME HR Demo</title>
 </head>
@@ -9,50 +10,53 @@
 <body>
     <header> 
         <h1> Azamat's Super Gun Shop</h1>
-        <img src = "../../Images/logo.png" alt = "ACME HR Deparment Logo">
+        <img src = "../../Images/logo.png" alt = "Gunned Skull Logo">
     </header>
 
     <nav>
         <ul>
             <li><a href = "/index.html">Main Page</a></li>
-            <li><a href = "list.html">Customers</a></li>
-            <li><a href = "">Appointments</a></li>
-            <li><a href = "">Gun Sellers</a></li>
+            <li><a href = "list.html" class="active">Customers</a></li>
+            <li><a href = "../Appiontments/list.html">Appointments</a></li>
+            <li><a href = "../Gun Sellers/list.html">Gun Sellers</a></li>
         </ul>
     </nav>
-
 <main>
     <h2>Customers</h2>
-   <table>
+   <table class="table-list">
     <thead>
         <tr>
             <th>FirstName</th>
             <th>LastName</th>
-            <th>Email</th>
+            <th>NickName</th>
+            <th>PhoneNumber</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>Artem</td>
             <td>Sydorovych</td>
-            <td>president@mira.artem</td>
+            <td>presidentMira</td>
+            <td>+48 000 000 00</td>
             <td>
-                <ul>
+                <ul class="list-actions">
                     <li>
-                        <a href = "form-details-Artem.html">Details</a>
+                        <a href = "form-details-Artem.html" class="list-actions-button-details">Details</a>
                     </li>
                     <li>
-                        <a href = "form-edit-Artem.html">Edit</a>
+                        <a href = "form-edit-Artem.html" class="list-actions-button-edit">Edit</a>
                     </li>
                     <li>
-                        <a href = "list-empty.html">Delete</a>
+                        <a href = "list-empty.html" class="list-actions-button-delete">Delete</a>
                     </li>
                 </ul>
             </td>
         </tr>
     </tbody>
    </table>
-   <p><a href = "form.html">Add new customer</a></p>
+   <p id="infoDelete">Successfully deleted Oleksandr!</p>
+   <p><a href = "form.html" class="button-add">Add new customer</a></p>
 </main>
 
 <footer>

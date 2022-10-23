@@ -16,37 +16,38 @@
     <nav>
         <ul>
             <li><a href = "/index.html">Main Page</a></li>
-            <li><a href = "list.html" class="active">Customers</a></li>
-            <li><a href = "../Appiontments/list.html">Appointments</a></li>
-            <li><a href = "../Gun Sellers/list.html">Gun Sellers</a></li>
+            <li><a href = "../Customers/list.html">Customers</a></li>
+            <li><a href = "../Appiontments/list.html" class="active">Appointments</a></li>
+            <li><a href = "../Gun Sellers/list.html" >Gun Sellers</a></li>
         </ul>
     </nav>
-
 <main>
-    <h2>Customers</h2>
+    <h2>Appointments</h2>
    <table class="table-list">
     <thead>
         <tr>
-            <th>FirstName</th>
-            <th>LastName</th>
-            <th>NickName</th>
-            <th>PhoneNumber</th>
+            <th>Date</th>
+            <th>Location</th>
+            <th>PrefferedGun</th>
+            <th>CustomerName</th>
+            <th>GunSellerNick</th>
             <th>Actions</th>
         </tr>
     </thead>
-    <tbody>
+   <tbody>
         <tr>
-            <td>Oleksandr</td>
-            <td>Podolich</td>
-            <td>Marquizy</td>
-            <td>+48 111 111 11</td>
+            <td>2022-12-23</td>
+            <td>Warszawa Centralna</td>
+            <td>Pistol</td>
+            <td>Artem</td>
+            <td>Leon</td>
             <td>
                 <ul class="list-actions">
                     <li>
-                        <a href = "form-details-Alex.html" class="list-actions-button-details">Details</a>
+                        <a href = "form-details-ArtemLeon.html" class="list-actions-button-details">Details</a>
                     </li>
                     <li>
-                        <a href = "form-edit-Alex.html" class="list-actions-button-edit">Edit</a>
+                        <a href = "form-edit-ArtemLeon.html" class="list-actions-button-edit">Edit</a>
                     </li>
                     <li>
                         <a href = "list-empty.html" class="list-actions-button-delete">Delete</a>
@@ -54,11 +55,10 @@
                 </ul>
             </td>
         </tr>
-
     </tbody>
    </table>
-   <p id="infoDelete">Successfully deleted Artem!</p>
-   <p><a href = "form.html" class="button-add">Add new customer</a></p>
+   <p id="infoDelete">Successfully deleted an appointment!</p>
+   <p><a href = "form.html" class="button-add">Add new appointment</a></p>
 </main>
 
 <footer>

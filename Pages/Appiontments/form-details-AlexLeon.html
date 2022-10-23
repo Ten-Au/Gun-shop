@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <meta charset = "UTF-8">
+    <title>Azamat ACME HR Demo</title>
+</head>
+
+<body>
+    <header> 
+        <h1> Azamat's Super Gun Shop</h1>
+        <img src = "../../Images/logo.png" alt = "Gunned Skull Logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href = "/index.html">Main Page</a></li>
+            <li><a href = "../Customers/list.html">Customers</a></li>
+            <li><a href = "../Appiontments/list.html" class="active">Appointments</a></li>
+            <li><a href = "../Gun Sellers/list.html" >Gun Sellers</a></li>
+        </ul>
+    </nav>
+<main>
+    <h2>Details of an appointment</h2>
+    <form class="form">
+        <label for="meetingDate">Date: <span class="symbol-required">*</span></label>
+        <input type="date" name="meetingDate" id="meetingDate" min="2020-01-01" max="2024-01-01" value = "2023-01-13" disabled>
+        <span id="errormeetingDate"></span>
+        
+        <label for="meetingPlace">Meeting place: <span class="symbol-required">*</span></label>
+        <select name ="meetingPlace" id="meetingPlace" disabled>
+            <option>-- Choose meeting place: </option>
+            <option value="1">Warszawa Centralna</option>
+            <option value="2" selected>Warszawa Wchodnia</option>
+            <option value="3">Marszalkowska 32</option>
+            <option value="4">Other (please specify): </option>
+        </select>
+        <textarea id ="owned_guns" name="owned_guns" rows="5" cols="40" disabled></textarea>
+        
+
+        <label>Preferred gun:</label>
+        <label for="gun1">Pistol</label>
+        <input type="radio" id="gun1" name="gun" value="pistol" disabled>
+        <label for="gun2">Rifle</label>
+        <input type="radio" id="gun2" name="gun" value="rifle" checked disabled>
+        <label for="gun3">Shotgun</label>
+        <input type="radio" id="gun3" name="gun" value="shotgun" disabled>
+        <label for="gun4">Rocket Launcher</label>
+        <input type="radio" id="gun4" name="gun" value="rocketLauncher" disabled>
+
+        <label for="customer">Customer Name: <span class="symbol-required">*</span></label>
+        <input type="text" name="customer" id="customer" value ="Oleksandr" disabled>
+        <span id="errorcustomer"></span>
+        <label for="gunSeller">Gun Seller NickName: <span class="symbol-required">*</span></label>
+        <input type="text" name="gunSeller" id="gunSeller" value ="Leon" disabled>
+        <span id="errorGuneller"></span>
+
+        <div class="form-buttons">
+            <p id="errorsSumary"></p>
+            <a href="form-edit-AlexLeon.html" class="list-actions-button-edit">Edit</a>
+            <a href="list.html" class="form-button-back">Back</a>
+        </div>
+    </form>
+
+</main>
+
+<footer>
+    Azamat, Maraimbekov, s22850
+</footer>
+
+
+</body>
+
+
+</html>

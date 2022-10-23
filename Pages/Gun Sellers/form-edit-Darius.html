@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <meta charset = "UTF-8">
+    <title>Azamat ACME HR Demo</title>
+</head>
+
+<body>
+    <header> 
+        <h1> Azamat's Super Gun Shop</h1>
+        <img src = "../../Images/gunswallowerlogo.jpg" alt = "Gunned Skull Logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href = "/index.html">Main Page</a></li>
+            <li><a href = "../Customers/list.html">Customers</a></li>
+            <li><a href = "../Appiontments/list.html">Appointments</a></li>
+            <li><a href = "../Gun Sellers/list.html" class="active">Gun Sellers</a></li>
+        </ul>
+    </nav>
+
+<main>
+    <h2>Edit gun seller</h2>
+    <form class="form">
+        <label for="nickName">NickName: <span class="symbol-required">*</span></label>
+        <input type="text" name="nickName" id="nickName" value = "Darius" required>
+        <span id="errornickName"></span>
+        
+        <label for="Experience">Experience: </label>
+        <select name ="Experience" id="Experience">
+            <option value="">-- Choose Experience: </option>
+            <option value="1">Beginner</option>
+            <option value="2">Intermediate</option>
+            <option value="3">Advanced</option>
+            <option value="4" selected>Master</option>
+            <option value="5">Military specialist</option>
+        </select>
+
+        <label for="salary">Salary: <span class="symbol-required">*</span></label>
+        <input type="number" id="salary" name="salary" min="5000" max="100000" step="5000" value = "20000" required>
+        <div>
+            <p id="errorsSumary"></p>
+            <input type="submit" value="Add" class="form-button-submit">
+            <a href ="list.html" class="form-button-cancel">Cancel</a>
+        </div>
+    </form>
+</main>
+
+<footer>
+    Azamat, Maraimbekov, s22850
+</footer>
+
+
+</body>
+
+
+</html>
